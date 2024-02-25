@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="mini-container main-widget">
+            <h1 class="reset-margin">
+                Random Number Generator
+                <hr>
+            </h1>
+            
+            <label id="number" class="reset-margin">
+                0
+            </label>
+            <div class="range-selection">
+                <p class="reset-margin">
+                    Select Range:
+                </p>
+                <div class="min-max-widget">
+                    <input type="number" id="min-id" value="0">
+                    <p class="reset-margin">-</p>
+                    <input type="number" id="max-id" value="1">
+                </div>
+            </div>
+            <button id="generate-random">
+                Generate
+            </button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

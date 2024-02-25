@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
+    color: #fff;
+}
+
+.reset-margin {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-image: url(resources/city-landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container {
+    width: 100%;
+    font-size: 4em;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.1px);
+    -webkit-backdrop-filter: blur(1.1px);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}

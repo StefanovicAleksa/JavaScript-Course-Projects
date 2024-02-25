@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="main-widget">
+            <h1 class="program-name reset-margin">
+                Temperature Conversion
+            </h1>
+            <div class="temp-inp-area">
+                <label for="temp-num-inp">
+                    Temperature:
+                </label>
+                <input type="number" name="" id="temp-num-inp">
+                <select name="temp-type" id="temp-type-select">
+                    <option value="&degC">
+                        &degC
+                    </option>
+                    <option value="&degF">
+                        &degF
+                    </option>
+                </select>
+            </div>
+            <button id="convert-btn">
+                Convert
+            </button>
+            <p class="reset-margin" id="conversion-value"></p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

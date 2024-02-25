@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.reset-margin {
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.count {
+    text-align: center;
+    font-size: 6em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-widget {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.btn-widget button {
+    background-color: #78b4ec;
+    padding: 0.5em 1em;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #fff;
+    transition: background-color 0.15s;
+}
+
+.btn-widget button:hover {
+    background-color: dodgerblue;
+}

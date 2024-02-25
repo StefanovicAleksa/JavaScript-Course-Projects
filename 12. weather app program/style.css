@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+.reset-margin {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.mini-container {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.main-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+    border-radius: 15px;
+    background-color: #eee;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 15);
+}
+
+header {
+    width: 100%;
+    font-size: 2rem;
+    border-bottom: 2px solid #33333360;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+#city-input {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+#city-name {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #33333360;
+    flex: 2.5;
+}
+
+#get-weather-btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f3f3f3;
+    background-color: #4db34e;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    flex: 1.5;
+}
+
+#get-weather-btn:hover {
+    border: 2px solid #333;
+}
+
+.weather-card {
+    width: 50%;
+    border-radius: 10px;
+    background: rgb(135,192,252);
+    background: linear-gradient(180deg, rgba(135,192,252,1) 0%, rgba(252,212,131,1) 100%); 
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 50px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 15);
+    display: none;
+    text-align: center;
+}
+
+.city-name {
+    font-size: 2rem;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.humidity {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.weather-desc {
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.emoji-weather-desc {
+    font-size: 5rem;
+}
+
+.error {
+    font-size: 1.5rem;
+    color: #ff0000;
+    display: none;
+}

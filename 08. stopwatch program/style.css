@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+.reset-margin {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    color: #333;
+    font-family: Segoe UI;
+}
+
+.mini-container {
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 25px;
+}
+
+#clock {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #333;
+    margin-top: 25px;
+}
+
+.stopwatch-function-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.stopwatch-function-area button {
+    border-radius: 5px;
+    color: #f3f3f3;
+    box-shadow: 0;
+    border: 0;
+    padding: 10px 32px;
+    font-size: 1em;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+#start-btn {
+    background-color: #0fa300;
+}
+
+#start-btn:hover {
+    background-color: #0d6e03;
+}
+
+#stop-btn {
+    background-color: #e8320d;
+}
+
+#stop-btn:hover {
+    background-color: #a7240a;
+}
+
+#reset-btn {
+    background-color: #3ea7f3;
+}
+
+#reset-btn:hover {
+    background-color: #2a71a3;
+}

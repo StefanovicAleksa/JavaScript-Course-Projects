@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="resources/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="mini-container main-widget">
+        <header>
+            <h1 class="reset-margin">
+                Weather App
+            </h1>
+        </header>
+        <main>
+            <form id="city-input">
+                <input type="text" id="city-name" placeholder="Enter City">
+                <button type="submit" id="get-weather-btn">
+                    Get Weather
+                </button>
+            </form>
+            <div class="weather-card">
+                <h2 class="city-name reset-margin"></h2>
+                <p class="temperature reset-margin"></p>
+                <p class="humidity reset-margin"></p>
+                <i class="weather-desc reset-margin"></i>
+                <p class="emoji-weather-desc reset-margin"></p>
+            </div>
+            <p class="error reset-margin">
+                Couldn't get the city weather information.
+            </p>
+        </main>
+    </section>
+    <script type="module "src="index.js"></script>
+</body>
+</html>

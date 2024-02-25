@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="mini-container main-widget">
+        <header>
+            <h1 class="program-name reset-margin">
+                Random Password Generator
+            </h1>
+        </header>
+        <main>
+            <ul class="password-prop-list">
+                <li>
+                    <label for="password-length-inp">
+                        Password Length:
+                    </label>
+                    <input type="number" name="password-length" id="password-length-inp">
+                </li>
+                <li>
+                    <label for="use-uppercase-check">
+                        Use Uppercase:
+                    </label>
+                    <input type="checkbox" name="uppercase" id="use-uppercase-check" checked>
+                </li>
+                <li>
+                    <label for="use-number-check">
+                        Use Numbers:
+                    </label>
+                    <input type="checkbox" name="numbers" id="use-number-check" checked>
+                </li>
+                <li>
+                    <label for="use-symbols-check">
+                        Use Symbols:
+                    </label>
+                    <input type="checkbox" name="symbols" id="use-symbols-check" checked>
+                </li>
+            </ul>
+            <button id="generate-password">
+                Genreate
+            </button>
+            <p id="password" class="reset-margin"></p>
+        </main>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

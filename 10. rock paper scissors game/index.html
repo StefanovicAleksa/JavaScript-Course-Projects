@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="mini-container main-widget">
+        <header>
+            <h1 class="program-name reset-margin">Rock - Paper - Scissors</h1>
+        </header>
+        <main>
+            <div class="play-area">
+                <button class="pick-btn" id="rock-btn">
+                    &#129704;
+                </button>
+                <button class="pick-btn" id="paper-btn">
+                    &#128196;
+                </button>
+                <button class="pick-btn" id="scissors-btn">
+                    &#9986;&#65039;
+                </button>
+            </div>
+            <div class="picks-area">
+                <div class="row-wrapper">
+                    <label for="players-pick">
+                        PLAYER: 
+                    </label>
+                    <p id="players-pick" class="reset-margin"></p>
+                </div>
+                <div class="row-wrapper">
+                    <label for="computers-pick">
+                        Computer: 
+                    </label>
+                    <p id="computers-pick" class="reset-margin"></p>
+                </div>
+            </div>
+            <div class="score-area">
+                <div class="row-wrapper">
+                    <label for="players-score">
+                        Player Score: 
+                    </label>
+                    <p id="players-score" class="reset-margin">
+                        0
+                    </p>
+                </div>
+                <div class="row-wrapper">
+                    <label for="computers-score">
+                        Computer Score: 
+                    </label>
+                    <p id="computers-score" class="reset-margin">
+                        0
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

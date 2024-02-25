@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="mini-container main-widget">
+            <h1 class="reset-margin">
+                Number Guessing Game
+                <hr>
+            </h1>
+            <div class="range-selection">
+                <p class="reset-margin">
+                    Select Range:
+                </p>
+                <div class="min-max-widget">
+                    <input type="number" id="min-id" value="0">
+                    <p class="reset-margin">-</p>
+                    <input type="number" id="max-id" value="1">
+                </div>
+            </div>
+            <button id="generate-random">
+                Generate Number
+            </button>
+            <div class="score-area">
+                <p id="current-attempt" class="reset-margin">
+                    Attempt: 1
+                </p>
+                <p id="best-guess" class="reset-margin">
+                    Best Guess Attempts: 0
+                </p>
+            </div>
+            <div class="guessing-area">
+                <div class="guess-num-area">
+                    <label for="guess-inp">
+                        Your Guess:
+                    </label>
+                    <input type="number" id="guess-inp">
+                </div>
+                <button id="guess-btn">
+                    Guess
+                </button>
+                <p id="dialog-lbl" class="reset-margin"></p>
+            </div>
+        </section>
+    </main>
+    <!-- confetti-effect script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- the guessing game script -->
+    <script src="index.js"></script>
+</body>
+</html>
